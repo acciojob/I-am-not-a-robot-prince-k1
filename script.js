@@ -34,6 +34,7 @@ flex.addEventListener('click', (event) => {
 		
 		if(count == 0){
 		let reset = document.createElement('button');
+			reset.id = 'reset';
 		reset.innerText = 'RESET';
 		reset.addEventListener('click', resetAll);
 		div.appendChild(reset);
@@ -42,6 +43,7 @@ flex.addEventListener('click', (event) => {
 		}
 		else if(count == 1){
 			let verify = document.createElement('button');
+			verify.id = 'verify';
 			verify.innerText = 'VERIFY';
 			verify.addEventListener('click', verifyImage);
 			div.appendChild(verify);
